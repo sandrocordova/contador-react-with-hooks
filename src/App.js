@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Contador from './componentes/Contador'
+import Card from './componentes/Card'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container d-flex justify-content-center align-items-center h-100">
+        <div className='row'>
+          <div className='co-md-4'>
+
+          <Card/>
+          <Contador/>
+          </div>
+        </div>
     </div>
   );
 }
